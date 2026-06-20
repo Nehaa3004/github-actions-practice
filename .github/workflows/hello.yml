@@ -1,0 +1,23 @@
+# Workflow
+# Should Have Name
+name: Hello
+#On tells when workflow should run
+on:
+  workflow_dispatch:
+# Jobs
+# Should be inside the workflow
+#jobs tell what workflow should do, where there can be one or more than one job, hence we  write jobs
+#jobs is an object so it needs indentation
+jobs:
+  #1st job (give indendation)
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to everyone
+        run: echo"Hello-All"
+        
+# Steps
+# Should be insite the job
+
+# Actions
+# Should be inside the Steps
